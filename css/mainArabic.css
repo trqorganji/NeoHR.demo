@@ -4946,6 +4946,30 @@ html[dir="rtl"] .header .logo {
   margin-right: auto !important;
 }
 
+@media (max-width: 576px) {
+  .contact .channel-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .contact .channel-card .channel-icon {
+    margin: 0 auto 20px auto !important;
+  }
+
+  .contact .channel-card .channel-content {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .contact .channel-card h4,
+  .contact .channel-card p {
+    text-align: center !important;
+  }
+}
+
 html[dir="rtl"] .mobile-nav-toggle {
   margin-right: 0;
   margin-left: 10px;
