@@ -4946,6 +4946,11 @@ html[dir="rtl"] .header .logo {
   margin-right: auto !important;
 }
 
+html[dir="rtl"] .mobile-nav-toggle {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
 @media (max-width: 576px) {
   .contact .channel-card {
     display: flex !important;
@@ -4968,9 +4973,4 @@ html[dir="rtl"] .header .logo {
   .contact .channel-card p {
     text-align: center !important;
   }
-}
-
-html[dir="rtl"] .mobile-nav-toggle {
-  margin-right: 0;
-  margin-left: 10px;
 }
