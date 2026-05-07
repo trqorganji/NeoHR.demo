@@ -872,30 +872,32 @@
               <div class="form-header">
               </div>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+            <form action="https://formsubmit.co/nada@neohr.sa" method="POST" class="php-email-form">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New NeoHR Contact Form Message">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://trqorganji.github.io/NeoHR.demo/">
+
                 <div class="form-group">
                   <label>Full Name</label>
-                  <input type="text" name="name" class="form-control" required="">
+                  <input type="text" name="Full Name" class="form-control" required>
                 </div>
 
                 <div class="form-group">
                   <label>Email Address</label>
-                  <input type="email" name="email" class="form-control" required="">
+                  <input type="email" name="Email Address" class="form-control" required>
                 </div>
 
                 <div class="form-group">
                   <label>Subject</label>
-                  <input type="text" name="subject" class="form-control" required="">
+                  <input type="text" name="Subject" class="form-control" required>
                 </div>
 
                 <div class="form-group">
                   <label>Message</label>
-                  <textarea name="message" class="form-control" rows="5" required=""></textarea>
+                  <textarea name="Message" class="form-control" rows="5" required></textarea>
                 </div>
-
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
 
                 <button type="submit" class="submit-btn">
                   <span>Send Message</span>
@@ -906,16 +908,8 @@
                   <i class="bi bi-shield-check"></i>
                   <span>Your information is secure and will never be shared</span>
                 </div>
+
               </form>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer">
@@ -987,7 +981,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
