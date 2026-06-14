@@ -4974,3 +4974,132 @@ html[dir="rtl"] .mobile-nav-toggle {
     text-align: center !important;
   }
 }
+
+/* ==============================
+   NeoHR Arabic Fixes - Why Us + Contact
+   ============================== */
+
+.why-us .capabilities-content {
+  padding-top: 0;
+}
+
+.why-us .capabilities-content h3 {
+  margin-bottom: 18px;
+}
+
+.why-us .mission-text {
+  margin-bottom: 34px;
+}
+
+.why-us .target-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0 0;
+}
+
+.why-us .target-list li {
+  position: relative;
+  padding-right: 22px;
+  margin-bottom: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  line-height: 1.8;
+}
+
+.why-us .target-list li::before {
+  content: "–";
+  position: absolute;
+  right: 0;
+  color: var(--accent-color);
+}
+
+.contact .row {
+  align-items: flex-start !important;
+}
+
+.contact .form-wrapper {
+  width: 100%;
+  height: auto;
+  margin-top: 0 !important;
+}
+
+.contact .contact-info-column {
+  width: 100%;
+  height: auto;
+  padding: 6px 0 0 0;
+}
+
+.contact .contact-intro {
+  margin-bottom: 32px;
+}
+
+.contact .contact-intro h2 {
+  margin-top: 20px;
+  margin-bottom: 18px;
+  line-height: 1.25;
+}
+
+.contact .contact-intro p {
+  margin-bottom: 0;
+  max-width: 520px;
+  line-height: 1.9;
+}
+
+.contact .contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact .channel-card {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .contact .contact-info-column {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .why-us .capabilities-content {
+    margin-top: 34px;
+  }
+
+  .contact .contact-info-column {
+    margin-top: 42px;
+    padding-right: 0;
+  }
+
+  .contact .contact-intro h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-us .capabilities-content {
+    margin-top: 38px;
+  }
+
+  .contact .form-wrapper {
+    padding: 28px 22px;
+  }
+
+  .contact .contact-info-column {
+    margin-top: 36px;
+  }
+
+  .contact .contact-intro h2 {
+    font-size: 26px;
+  }
+
+  .contact .channel-card {
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: center;
+  }
+
+  .contact .channel-card .channel-icon {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
